@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: green;
+    /* background: transparent;
+    backdrop-filter: blur(3px); */
+}
+
+.menu-btn {
+    display: none;
+}
+.close-btn {
+    display: none;
+}
+header h1 {
+    color: white;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav button {
+    margin: 0 1rem; /*top+bottom left+right*/
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    width: 8rem;
+    
+    text-align: center;
+}
+nav ul li:hover {
+    background-color: rgb(0, 170, 255);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logInButton {
+    width: 6rem;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid rgb(0, 170, 255);
+    color: white;
+    padding: 5px 10px;/*top+bottom left+right*/
+    font-weight: 700;
+    cursor: pointer; 
+    transition: .3s;
+}
+.logInButton:hover {
+    background-color: rgb(0, 170, 255);
+}
+
+.signUpButton {
+    width: 6rem;
+    border-radius: 50px;
+    background-color: rgb(0, 170, 255);
+    border: 2px solid rgb(0, 170, 255);
+    color: white;
+    padding: 5px 10px;/*top+bottom left+right*/
+    font-weight: 700; 
+    cursor: pointer;
+    transition: .3s;
+}
+.signUpButton:hover {
+    background-color: green;
+}
+
+@media screen and (max-width: 950px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    header h1 {
+        margin-left: 3rem;
+    }
+    .menu-btn {
+        display: block;
+        margin-top: 1.5rem;
+        position: absolute;
+        right: 20px;
+    }
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    /*buttons*/
+    header nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        height: 100vh;
+        background-color: green;
+        position: absolute;
+        right: -50rem;
+        transition: .5s;
+    }
+    header nav.open {
+        right: 0;
+    }
+
+    /*navbar*/
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2.1em;
+    }
+    header nav ul li {
+        margin-bottom: 1.5rem;
+    }
+    header nav button {
+        margin-top: 2rem;
+    }
+}
