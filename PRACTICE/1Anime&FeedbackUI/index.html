@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Аниме картинки, аниме персонажи, аниме картинки, Аниме персонажи">
     <title>Рандомный генератор аниме персонажей и обратная связь</title>
+    <link rel="icon" href="https://img.icons8.com/arcade/2x/sailor-moon.png">
     <link rel="stylesheet" href="anime.css">
     <link rel="stylesheet" href="feedback.css">
 </head>
@@ -12,13 +14,39 @@
     
     <div class="anime-container">
         <div class="anime-content">
-            <h1>Hello</h1>
+            <h1>Генератор Аниме персонажей <br> (catboys и др.)</h1>
+            <button class="button" id="button">Показать аниме персонажа</button>
+            <div class="anime-pics-container">
+                <img class="anime-img" src="https://ir.ozone.ru/s3/multimedia-n/c1000/6142246391.jpg" 
+                    title="Аниме персонаж" 
+                    alt="Аниме персонаж" />
+                <h3 class="anime-name">Художник аниме</h3>
+            </div>
         </div>
     </div>
 
     <div class="feedback-container">
         <div class="feedback-content">
-
+            <h1 class="heading">Обратный отзыв на счёт аниме генератора</h1>
+            <div class="ratings-container" id="ratings-container">
+                <div class="rating rating1">
+                    <img id="first-img " src="https://cdn-icons-png.flaticon.com/128/8729/8729826.png" 
+                        alt="иконка неудовлетворительно"/>
+                     <small>Плохо</small>
+                </div>
+                <div class="rating rating2">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1791/1791308.png" 
+                        alt="иконка нормально"/>
+                    <small>Норм</small>
+                </div>
+                <div class="rating rating3">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2584/2584606.png" 
+                        alt="иконка хорошо"/>
+                    <small>Круто</small>
+                </div>
+            </div>
+            <!--Send Review Button-->
+            <button class="button" id="btn">Отправить отзыв</button>
         </div>
     </div>
 
