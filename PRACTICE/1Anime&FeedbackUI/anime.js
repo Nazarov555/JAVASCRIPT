@@ -10,7 +10,7 @@ button.addEventListener('click', async function(){
         button.innerText = "Загрузка...";
         animeName.innerText = "Обновляется...";
         animeImg.src = "spinner.svg";
-        const response = await fetch(" https://api.catboys.com/img");
+        const response = await fetch("https://api.catboys.com/img");
         const data = await response.json();
         button.disabled = false;
         button.innerText = "Показать аниме персонажа"
