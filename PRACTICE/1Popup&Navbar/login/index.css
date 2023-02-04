@@ -1,0 +1,78 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-container {
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-content {
+    background: linear-gradient(45deg , cyan, pink, pink);
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 35rem;
+    background-color: white;
+    padding: 5rem;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+input:focus {
+    outline: none;
+}
+
+.other-container {
+    display: flex;
+    gap: 5rem;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    margin-top: 2px;
+}
+img {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+input[type="email"],
+input[type="password"] {
+    height: 2rem;
+    border-radius: 20px;
+    border: 0;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.loginButton {
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 0;
+    background-color: lightskyblue;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.loginButton:hover {
+    background-color: green;
+    color: white;
+}

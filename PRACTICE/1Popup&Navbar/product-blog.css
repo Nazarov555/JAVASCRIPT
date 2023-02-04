@@ -5,6 +5,7 @@ body {
 }
 .product-container {
     padding: 100px 5%;
+    background-color: black;
 }
 .product-content {
     display: flex;
@@ -19,8 +20,11 @@ body {
     border: 2px solid black;
     border-radius: 20px;
     background-color: blueviolet;
+    transition: .7s;
 }
-
+.product:hover {
+    transform: scale(1.1);
+}
 .product-image img {
     width: 18.8rem;
     border-top-left-radius: 20px;

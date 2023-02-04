@@ -9,6 +9,15 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
 header {
     display: flex;
     justify-content: space-around;
@@ -91,6 +100,7 @@ nav ul li a {
 }
 
 @media screen and (max-width: 950px) {
+
     header {
         display: flex;
         justify-content: space-between;
@@ -110,6 +120,7 @@ nav ul li a {
         top: 15px;
         right: 20px;
     }
+
     /*buttons*/
     header nav {
         display: flex;
@@ -131,11 +142,10 @@ nav ul li a {
     header nav ul {
         display: flex;
         flex-direction: column;
-      
         margin-right: 2.1em;
-        height: 60%;
+        height: 40%;
         width: 100%;
-        transform: translateY(150px);
+        padding-top: 5rem;
     }
     header nav ul li {
         margin-bottom: 1.5rem;
