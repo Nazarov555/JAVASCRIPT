@@ -21,9 +21,7 @@ body {
     grid-template-rows: repeat(2, 50px);
     justify-content: center;
     align-items: center;
-    height: 20rem;
-    width: 35rem;
-    background-color: white;
+    height: 18rem;
     padding: 5rem;
     text-align: center;
     border-radius: 20px;
@@ -36,7 +34,9 @@ input:focus {
 
 .other-container {
     display: flex;
-    gap: 5rem;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
 }
 a {
     text-decoration: none;
@@ -54,10 +54,10 @@ img {
 
 input[type="email"],
 input[type="password"] {
-    height: 2rem;
+    height: 1rem;
     border-radius: 20px;
     border: 0;
-    padding: 10px;
+    padding: .6rem;
     font-size: 1.5rem;
 }
 
@@ -75,4 +75,26 @@ input[type="password"] {
 .loginButton:hover {
     background-color: green;
     color: white;
+}
+.remember_me-section {
+    width: 7rem;
+}
+
+@media (max-width: 590px) {
+    .login-content {
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    input[type="email"],
+    input[type="password"] {
+        width: 15rem;
+    }
+    .loginButton {
+        width: 16.5rem;
+    }
+    .other-container {
+        gap: 5rem;
+    }
 }
