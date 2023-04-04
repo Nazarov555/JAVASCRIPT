@@ -168,8 +168,7 @@ button {
         width: 100%;
         height: calc(100vh - 80px);
         background-color: white;
-
-        margin-top: 2rem;
+        
         padding: 2.5rem 1%;
     }
     .nav-menu.active {
