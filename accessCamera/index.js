@@ -5,3 +5,4 @@ function streamVideo() {
         .then( stream => video.srcObject = stream )
         .catch( error => console.log(error) );
 }
+console.log("Hello World!!!");
